@@ -1,1 +1,1 @@
-web: python combine.py $PORT $HOST
+web: python combine.py $PORT
