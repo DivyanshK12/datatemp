@@ -1,1 +1,1 @@
-web: gunicorn combine:app
+web: python combine.py
