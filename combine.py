@@ -13,5 +13,4 @@ application = DispatcherMiddleware(flask_app, {
 
 if __name__ == '__main__':
     port = int(sys.argv[1])
-    host = sys.argv[2]
-    run_simple(host, port, application)
+    run_simple('0.0.0.0', port, application)
