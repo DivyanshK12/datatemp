@@ -2,13 +2,17 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
+import dash_bootstrap_components as dbc
 from flask import Flask
 import os
 
 server = Flask(__name__)
 server.secret_key = os.environ.get('secret_key', 'secret')
-app = dash.Dash(name = __name__, server = server)
-
+app = dash.Dash(
+    __name__,
+    requests_pathname_prefix='/app3/',
+    external_stylesheets=[dbc.themes.DARKLY]
+)
 app.layout = html.Div(children=[
     html.H1(children='Hello Dash'),
     html.Div(children='''
@@ -36,6 +40,3 @@ app.layout = html.Div(children=[
 )
 def update_output_div(input_value):
     return 'You\'ve entered "{}"'.format(input_value)
-
-if __name__ == "__main__":
-    app.run_server(debug= True)
