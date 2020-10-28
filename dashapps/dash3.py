@@ -18,6 +18,7 @@ app.layout = html.Div(children=[
     html.Div(children='''
         Dash: A web application framework for Python.
     '''),
+    html.Br(),
     dcc.Graph(
         id='example-graph',    
         figure={
@@ -30,6 +31,7 @@ app.layout = html.Div(children=[
             }
         }
     ),
+    html.Br(),
     dcc.Input(id='my-id', value='initial value', type="text"),
     html.Div(id='my-div')
 ])
