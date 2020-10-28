@@ -2,8 +2,8 @@ from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from werkzeug.serving import run_simple
 
 from fileinput import app as flask_app
-from dash1 import app as app1
-from dash3 import app as app3
+from dashapps.dash1 import app as app1
+from dashapps.dash3 import app as app3
 import sys
 
 application = DispatcherMiddleware(flask_app, {
@@ -13,4 +13,5 @@ application = DispatcherMiddleware(flask_app, {
 
 if __name__ == '__main__':
     port = int(sys.argv[1])
-    run_simple('0.0.0.0', port, application)
+    run_simple('0.0.0.0', port, application) 
+    #use localhost for local running and port 8050
