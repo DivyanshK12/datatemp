@@ -3,9 +3,9 @@ Basic Online Visualization tool for any CSV file input
 
 # Demo
 Few examples from documentation at:
-* https://datatemp.herokuapp.com/app1
-* https://datatemp.herokuapp.com/app2
-* https://datatemp.herokuapp.com/app3
+* https://datatempdk.herokuapp.com/app1
+* https://datatempdk.herokuapp.com/app2
+* https://datatempdk.herokuapp.com/app3
 
 # TODO
 * Better site design
