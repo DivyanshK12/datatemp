@@ -23,6 +23,6 @@ sklearn==0.0
 uritemplate==3.0.1
 urllib3==1.25.8
 w3lib==1.22.0
-Werkzeug==1.0.0
+Werkzeug==2.2.3
 WTForms==2.3.3
 threadpoolctl==2.1.0
